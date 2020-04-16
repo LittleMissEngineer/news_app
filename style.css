@@ -1,0 +1,36 @@
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.header_image{
+    text-align: center;
+    padding:30px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+  }
+  
+  .topnav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
