@@ -12,7 +12,7 @@ fetch(req) //getting the url
         console.log(data);
         articles = data.articles;
        // for(let [index, artcle] of articles.entries()){
-          displayStories(articles[0]);
+          displayStories(articles[1]);
             document.querySelector('.headliner').innerHTML = output;
         //}
     })
