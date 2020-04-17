@@ -35,7 +35,11 @@ body{
     color: white;
   }
 
-  .headliner{
+  .jumbotron{
+      padding: 2rem 1rem;
+  }
+
+  /*.headliner{
     background-color: lightgrey;
     width: 400px;
     height:300px;
@@ -45,4 +49,6 @@ body{
 	max-width: 1000px;
     float: none;
     margin-top:20px;
-  }
+  }*/
+
+  

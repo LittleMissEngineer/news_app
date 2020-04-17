@@ -11,10 +11,10 @@ fetch(req) //getting the url
     .then(function(data){
         console.log(data);
         articles = data.articles;
-        for(let [index, artcle] of articles.entries()){
-          displayStories(articles[index]);
+       // for(let [index, artcle] of articles.entries()){
+          displayStories(articles[0]);
             document.querySelector('.headliner').innerHTML = output;
-        }
+        //}
     })
 
 
@@ -23,20 +23,22 @@ fetch(req) //getting the url
         let author = story.author;
         let img = story.urlToImage;
         let descript = story.description;
+        let url = story.url;
 
-        output += `
+        output += 
+        `
+        <div class="jumbotron" style = "padding-bottom:23px">
+        <img src="${img}" class="img-fluid" alt="Responsive image" style = "height:auto; width:540px; float:left; padding-right:20px;">
         <div class = "headliner">
         <div class = "news_story_info">
-
-           <span>${title}</span>
-           <br>
-           <span>${author}</span>
-           <br>
-           <img src = "${img}"/>
-           <br>
-           <span>${descript}</span>
-       </div>
-        </div>
-           `
-
+        <h1 class="display-4"><a href = "${url}" target = "blank" style = "color: black">${title}</a></h1>
+        <p class="lead">
+        ${descript}</p>
+        <hr class="my-4">
+      </div>
+</div>
+</div>
+        
+        `
+        
     }
